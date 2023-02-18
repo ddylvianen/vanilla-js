@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
 </head>
+
 <body>
-    
+    <div class="contianer">
+        <header class="Header">
+            <h1 class="name-header">TODO APP</h1>
+            <div class="search-contianer">
+                <input class="search-input" type="te" placeholder="type to search" />
+                <button class="button search-btn">Search</button>
+            </div>
+        </header>
+        <!---------------------------------------------- end of header ----------------------------------------------------->
+
+        <div class="mainaddtodo-container">
+            <div class="addtodo-container">
+                <input id="input" type="text" class="search-input addtodo-input" placeholder="type your todo">
+                <button class="button addtodo-btn" onclick="save_addtodo(document.getElementById('input'))">add todo</button>
+            </div>
+
+            <div class="todo-container" id="addtodo">
+                <div class="todo">
+                    <div class="todo-note"><p class="note">HI</p></div>
+                    <button class="button todo-edit-btn" onclick="edit(this)">edit</button>
+                    <button class="button todo-delete-btn" onclick="remove(this)">delete</button>
+                </div>
+                <div class="todo">
+                    <div class="todo-note"><p class="note">HI</p></div>
+                    <button class="button todo-edit-btn">edit</button>
+                    <button class="button todo-delete-btn">delete</button>
+                </div>
+                <div class="todo">
+                    <div class="todo-note"><p class="note">HI</p></div>
+                    <button class="button todo-edit-btn">edit</button>
+                    <button class="button todo-delete-btn">delete</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
